@@ -2,41 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Lawrence Edaria Personal Website Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark theme - Professional navy and gold palette */
+    --background: 220 25% 5%;
+    --foreground: 210 40% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 20% 8%;
+    --card-foreground: 210 40% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 20% 8%;
+    --popover-foreground: 210 40% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 220 80% 15%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 15% 12%;
+    --secondary-foreground: 210 40% 90%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 15% 10%;
+    --muted-foreground: 210 20% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 85% 55%;
+    --accent-foreground: 220 25% 5%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 15% 15%;
+    --input: 220 15% 12%;
+    --ring: 45 85% 55%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --navy-dark: 220 30% 8%;
+    --navy-medium: 220 50% 15%;
+    --navy-light: 220 40% 25%;
+    --gold: 45 85% 55%;
+    --gold-dark: 45 75% 45%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--navy-dark)), hsl(var(--navy-medium)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--navy-light)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-dark)));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 30px hsl(var(--gold) / 0.1);
+    --shadow-card: 0 8px 32px hsl(220 25% 5% / 0.4);
+    
+    /* Typography */
+    --font-display: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +119,33 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent to-gold-dark bg-clip-text text-transparent;
   }
 }
