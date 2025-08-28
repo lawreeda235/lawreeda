@@ -61,14 +61,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "lawrence@example.com",
-      link: "mailto:lawrence@example.com"
+      value: "lawrenceedaria277@gmail.com",
+      link: "mailto:lawrenceedaria278@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+254 718 984470",
+      link: "tel:+254 718 984470"
     },
     {
       icon: MapPin,
