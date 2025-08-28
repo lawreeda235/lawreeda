@@ -14,17 +14,6 @@ const Skills = () => {
       ]
     },
     {
-      title: "Backend Development",
-      skills: [
-        { name: "Node.js", level: 87 },
-        { name: "Python", level: 82 },
-        { name: "Express.js", level: 85 },
-        { name: "REST APIs", level: 90 },
-        { name: "GraphQL", level: 78 },
-        { name: "PostgreSQL", level: 80 }
-      ]
-    },
-    {
       title: "Tools & Technologies",
       skills: [
         { name: "Git", level: 92 },
