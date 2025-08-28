@@ -55,15 +55,15 @@ const Hero = () => {
             </div>
 
             <div className="flex space-x-6 animate-fade-in [animation-delay:0.9s] opacity-0 fill-mode-forwards">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://github.com/lawreeda235" target="_blank" rel="noopener noreferrer" 
                  className="text-muted-foreground hover:text-accent transition-colors duration-300">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/lawrence-edaria-71260234b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"
                  className="text-muted-foreground hover:text-accent transition-colors duration-300">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:lawrence@example.com"
+              <a href="mailto:lawrenceedaria277@gmail.com"
                  className="text-muted-foreground hover:text-accent transition-colors duration-300">
                 <Mail size={24} />
               </a>
